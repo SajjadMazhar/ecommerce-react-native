@@ -18,7 +18,7 @@ export default function RegisterScreen() {
       email,
       password
     }
-    axios.post("http://192.168.221.59:8000/register", user, {headers:{'Content-Type':'application/json'}}).then(resp=>{
+    axios.post("http://192.168.0.107:8000/register", user, {headers:{'Content-Type':'application/json'}}).then(resp=>{
       console.log(resp.data);
       Alert.alert("Registration successful", "You have registered successfully");
       setName(""); setEmail(""); setPassword("");
